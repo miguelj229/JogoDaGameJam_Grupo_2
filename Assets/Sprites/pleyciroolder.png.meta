@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pleyciroolder_0: 7709333030161973380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
