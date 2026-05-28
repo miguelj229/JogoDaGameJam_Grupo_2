@@ -9,11 +9,22 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Config")]
     [SerializeField] float speed = 3f;
+    [SerializeField] float dashSpeed;
+    float speedAtual;
+    [SerializeField] float dashCooldown;
+    bool inDash;
     [SerializeField] Color highlightColor;
 
     List<GameObject> collidingWithList = new List<GameObject>();
     GameObject collidingWith;
     Transform item;
+
+    private void Start()
+    {
+        speedAtual = speed;
+
+
+    }
 
   void Update()
     {
@@ -61,6 +72,13 @@ public class PlayerController : MonoBehaviour
         dir.y = Input.GetAxis("Vertical");
         dir.Normalize();
 
+        if (Input.GetKeyDown(KeyCode.Q) && dir != Vector2.zero && inDash == false)
+        {
+            inDash = true;
+            speedAtual = dashSpeed;
+            Invoke("PostDash", 0.1f);
+        }
+
         if (dir.x > 0)
         {
             this.transform.localScale = new Vector3(0.78f, 0.78f, 1f);
@@ -69,7 +87,7 @@ public class PlayerController : MonoBehaviour
             this.transform.localScale = new Vector3(-0.78f, 0.78f, 1f);
         }
 
-        GetComponent<Rigidbody2D>().linearVelocity = dir * speed;
+        GetComponent<Rigidbody2D>().linearVelocity = dir * speedAtual;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -96,6 +114,15 @@ public class PlayerController : MonoBehaviour
         this.collidingWith = null;
     }
 
+    void DashEnd()
+    {
+        inDash = false;
+    }
+    void PostDash()
+    {
+        speedAtual = speed;
+        Invoke("DashEnd", dashCooldown);
+    }
     void GetFirstCollider()
     { 
     this.collidingWith = this.collidingWithList
