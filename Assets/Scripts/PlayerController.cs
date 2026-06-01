@@ -61,6 +61,22 @@ public class PlayerController : MonoBehaviour
                     }
 
                     break;
+                case "Customer":
+                    if (this.item == null)
+                        break;
+
+                    Customer customer = this.collidingWith.GetComponent<Customer>();
+                    if (customer == null)
+                        break;
+
+                    FoodItem foodItem = this.item.GetComponent<FoodItem>();
+                    if (foodItem == null)
+                        break;
+
+                    customer.Serve(foodItem.recipe);
+                    Destroy(this.item.gameObject);
+                    this.item = null;
+                    break;
             }
         }
     }
