@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class MenuPausa : MonoBehaviour
 {
     public GameObject painelPausa;
+    public GameObject botaoPausa;
 
     private bool pausado = false;
 
@@ -31,6 +32,8 @@ public class MenuPausa : MonoBehaviour
     public void AbrirMenuPausa()
     {
         painelPausa.SetActive(true);
+        botaoPausa.SetActive(false); // Esconde o botão
+
         Time.timeScale = 0f;
         pausado = true;
     }
@@ -38,6 +41,8 @@ public class MenuPausa : MonoBehaviour
     public void ContinuarJogo()
     {
         painelPausa.SetActive(false);
+        botaoPausa.SetActive(true); // Mostra o botão novamente
+
         Time.timeScale = 1f;
         pausado = false;
     }
