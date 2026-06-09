@@ -1,0 +1,163 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.Linq;
+using Unity.VisualScripting;
+using System.ComponentModel;
+
+public class Player2Controller : MonoBehaviour
+{
+    [Header("Config")]
+    [SerializeField] float speed = 3f;
+    [SerializeField] float dashSpeed;
+    float speedAtual;
+    [SerializeField] float dashCooldown;
+    bool inDash;
+    [SerializeField] Color highlightColor;
+
+    List<GameObject> collidingWithList = new List<GameObject>();
+    GameObject collidingWith;
+    Transform item;
+
+    void Update()
+    {
+        Move();
+        Interact();
+    }
+
+    void Interact()
+    {
+        if (this.collidingWith == null) return;
+
+        // ENTER PARA INTERAGIR
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            switch (this.collidingWith.tag)
+            {
+                case "Container":
+
+                    ContainerController container =
+                        this.collidingWith.GetComponent<ContainerController>();
+
+                    // COLOCAR ITEM
+                    if (this.item != null && !container.HaveItem())
+                    {
+                        this.item.position = container.transform.position;
+                        this.item.parent = container.transform;
+
+                        container.SetItem(this.item);
+
+                        this.item = null;
+                        return;
+                    }
+
+                    // PEGAR ITEM
+                    if (this.item == null && container.HaveItem())
+                    {
+                        this.item = container.GetItem();
+
+                        this.item.position = this.transform.position;
+                        this.item.parent = this.transform;
+
+                        return;
+                    }
+
+                    break;
+            }
+        }
+    }
+
+    void Move()
+{
+    Vector2 dir = Vector2.zero;
+
+    // MOVIMENTO COM SETAS
+    if (Input.GetKey(KeyCode.LeftArrow)) dir.x = -1;
+    if (Input.GetKey(KeyCode.RightArrow)) dir.x = 1;
+    if (Input.GetKey(KeyCode.UpArrow)) dir.y = 1;
+    if (Input.GetKey(KeyCode.DownArrow)) dir.y = -1;
+
+    dir.Normalize();
+
+    if (Input.GetKeyDown(KeyCode.RightShift) && dir != Vector2.zero && inDash == false)
+        {
+            inDash = true;
+            speedAtual = dashSpeed;
+            Invoke("PostDash", 0.1f);
+        }
+
+    // VIRAR PERSONAGEM
+    if (dir.x > 0)
+    {
+        this.transform.localScale =
+            new Vector3(0.78f, 0.78f, 1f);
+    }
+    else if (dir.x < 0)
+    {
+        this.transform.localScale =
+            new Vector3(-0.78f, 0.78f, 1f);
+    }
+
+    // MOVIMENTO
+    GetComponent<Rigidbody2D>().linearVelocity = dir * speed;
+}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (this.collidingWithList.Contains(collision.gameObject)) return;
+
+        this.collidingWithList.Add(collision.gameObject);
+
+        CleanHighlight();
+        GetFirstCollider();
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (!this.collidingWithList.Contains(collision.gameObject)) return;
+
+        this.collidingWithList.Remove(collision.gameObject);
+
+        CleanHighlight();
+
+        if (this.collidingWithList.Count > 0)
+        {
+            GetFirstCollider();
+            return;
+        }
+
+        this.collidingWith = null;
+    }
+
+    void DashEnd()
+    {
+        inDash = false;
+    }
+    void PostDash()
+    {
+        speedAtual = speed;
+        Invoke("DashEnd", dashCooldown);
+    }
+
+    void GetFirstCollider()
+    {
+        this.collidingWith = this.collidingWithList
+            .FirstOrDefault(obj => !obj.CompareTag("Wall"));
+
+        if (this.collidingWith != null)
+        {
+            this.collidingWith
+                .GetComponent<SpriteRenderer>().color = this.highlightColor;
+        }
+    }
+
+    void CleanHighlight()
+    {
+        if (this.collidingWith != null &&
+            !this.collidingWith.CompareTag("Wall"))
+        {
+            this.collidingWith
+                .GetComponent<SpriteRenderer>().color = Color.white;
+        }
+    }
+}

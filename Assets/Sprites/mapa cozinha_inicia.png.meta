@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: d5b546d69965b764dbf61c1bb7f58942
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3613960999041963172
+    second: mapa cozinha_inicia_0
+  - first:
+      213: 1953133019452773167
+    second: mapa cozinha_inicia_1
+  - first:
+      213: 4603719779776563628
+    second: mapa cozinha_inicia_2
+  - first:
+      213: 676695658718595418
+    second: mapa cozinha_inicia_3
+  - first:
+      213: -3517783637614273414
+    second: mapa cozinha_inicia_4
+  - first:
+      213: -6764571748187954948
+    second: mapa cozinha_inicia_5
+  - first:
+      213: -8967592423463556075
+    second: mapa cozinha_inicia_6
+  - first:
+      213: -6282237254858345059
+    second: mapa cozinha_inicia_7
+  - first:
+      213: -7234952179715965543
+    second: mapa cozinha_inicia_8
+  - first:
+      213: -6896818241839366300
+    second: mapa cozinha_inicia_9
+  - first:
+      213: 331117273026956260
+    second: mapa cozinha_inicia_10
+  - first:
+      213: -6975107362409760109
+    second: mapa cozinha_inicia_11
+  - first:
+      213: -7867632697133625057
+    second: mapa cozinha_inicia_12
+  - first:
+      213: -4475673158159563978
+    second: mapa cozinha_inicia_13
+  - first:
+      213: -8615456014072887776
+    second: mapa cozinha_inicia_14
+  - first:
+      213: 2518699797570170071
+    second: mapa cozinha_inicia_15
+  - first:
+      213: 8698209694221572966
+    second: mapa cozinha_inicia_16
+  - first:
+      213: 7626764253549790707
+    second: mapa cozinha_inicia_17
+  - first:
+      213: -986647667268510422
+    second: mapa cozinha_inicia_18
+  - first:
+      213: 8999101429673091154
+    second: mapa cozinha_inicia_19
+  - first:
+      213: 9145584950987685460
+    second: mapa cozinha_inicia_20
+  - first:
+      213: -8467066863965457300
+    second: mapa cozinha_inicia_21
+  - first:
+      213: -4497305731585899285
+    second: mapa cozinha_inicia_22
+  - first:
+      213: 2702823761385298529
+    second: mapa cozinha_inicia_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4130c816e572230800000000000000
+      internalID: 3613960999041963172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 436
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23919f022cea1b10800000000000000
+      internalID: 1953133019452773167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 436
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca985078fb2b3ef30800000000000000
+      internalID: 4603719779776563628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 452
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5988f6cd1b146900800000000000000
+      internalID: 676695658718595418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 452
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7cd15b6b625e2fc0800000000000000
+      internalID: -3517783637614273414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf02d93d5d96f12a0800000000000000
+      internalID: -6764571748187954948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_6
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 452
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c68f40436bc8380800000000000000
+      internalID: -8967592423463556075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95717d508201d8a0800000000000000
+      internalID: -6282237254858345059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d77113359489b90800000000000000
+      internalID: -7234952179715965543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 436
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ffab699549940a0800000000000000
+      internalID: -6896818241839366300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 436
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb84cdc76d589400800000000000000
+      internalID: 331117273026956260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 436
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39aba514fc0733f90800000000000000
+      internalID: -6975107362409760109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 404
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f111a181fbd80d290800000000000000
+      internalID: -7867632697133625057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_13
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 404
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633062dc9f633e1c0800000000000000
+      internalID: -4475673158159563978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_14
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 404
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026ce2fd660cf6880800000000000000
+      internalID: -8615456014072887776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 404
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dca40a0f1834f220800000000000000
+      internalID: 2518699797570170071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_16
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 404
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b9fedb1af36b870800000000000000
+      internalID: 8698209694221572966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_17
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 404
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f58b762ea5b7d960800000000000000
+      internalID: 7626764253549790707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_18
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 404
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d1ef19c29be42f0800000000000000
+      internalID: -986647667268510422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 405
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250ef5d221b33ec70800000000000000
+      internalID: 8999101429673091154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_20
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 404
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e77cabe05abee70800000000000000
+      internalID: 9145584950987685460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_21
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 404
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64bbd33c8fee7a80800000000000000
+      internalID: -8467066863965457300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_22
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be48e7ec34c5691c0800000000000000
+      internalID: -4497305731585899285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa cozinha_inicia_23
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a1bdb04eb528520800000000000000
+      internalID: 2702823761385298529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cb8bedca6951f8e45884cd04bc753cf4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mapa cozinha_inicia_0: 3613960999041963172
+      mapa cozinha_inicia_1: 1953133019452773167
+      mapa cozinha_inicia_10: 331117273026956260
+      mapa cozinha_inicia_11: -6975107362409760109
+      mapa cozinha_inicia_12: -7867632697133625057
+      mapa cozinha_inicia_13: -4475673158159563978
+      mapa cozinha_inicia_14: -8615456014072887776
+      mapa cozinha_inicia_15: 2518699797570170071
+      mapa cozinha_inicia_16: 8698209694221572966
+      mapa cozinha_inicia_17: 7626764253549790707
+      mapa cozinha_inicia_18: -986647667268510422
+      mapa cozinha_inicia_19: 8999101429673091154
+      mapa cozinha_inicia_2: 4603719779776563628
+      mapa cozinha_inicia_20: 9145584950987685460
+      mapa cozinha_inicia_21: -8467066863965457300
+      mapa cozinha_inicia_22: -4497305731585899285
+      mapa cozinha_inicia_23: 2702823761385298529
+      mapa cozinha_inicia_3: 676695658718595418
+      mapa cozinha_inicia_4: -3517783637614273414
+      mapa cozinha_inicia_5: -6764571748187954948
+      mapa cozinha_inicia_6: -8967592423463556075
+      mapa cozinha_inicia_7: -6282237254858345059
+      mapa cozinha_inicia_8: -7234952179715965543
+      mapa cozinha_inicia_9: -6896818241839366300
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

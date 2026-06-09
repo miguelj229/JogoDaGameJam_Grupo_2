@@ -5,7 +5,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using System.ComponentModel;
 
-public class PlayerController : MonoBehaviour
+public class Player1Controller : MonoBehaviour
 {
     [Header("Config")]
     [SerializeField] float speed = 3f;
@@ -19,75 +19,73 @@ public class PlayerController : MonoBehaviour
     GameObject collidingWith;
     Transform item;
 
+
     private void Start()
     {
         speedAtual = speed;
-
-
     }
 
-  void Update()
+    void Update()
     {
         Move();
         Interact();
     }
 
-  void Interact()
+    void Interact()
     {
         if (this.collidingWith == null) return;
 
+        // SPACE PARA INTERAGIR
         if (Input.GetKeyDown(KeyCode.Space))
         {
             switch (this.collidingWith.tag)
             {
                 case "Container":
-                    ContainerController container = this.collidingWith.GetComponent<ContainerController>();
 
+                    ContainerController container =
+                        this.collidingWith.GetComponent<ContainerController>();
+
+                    // COLOCAR ITEM
                     if (this.item != null && !container.HaveItem())
                     {
                         this.item.position = container.transform.position;
                         this.item.parent = container.transform;
+
                         container.SetItem(this.item);
+
                         this.item = null;
                         return;
                     }
 
+                    // PEGAR ITEM
                     if (this.item == null && container.HaveItem())
                     {
                         this.item = container.GetItem();
+
                         this.item.position = this.transform.position;
                         this.item.parent = this.transform;
+
                         return;
                     }
 
-                    break;
-                case "Customer":
-                    if (this.item == null)
-                        break;
-
-                    Customer customer = this.collidingWith.GetComponent<Customer>();
-                    if (customer == null)
-                        break;
-
-                    FoodItem foodItem = this.item.GetComponent<FoodItem>();
-                    if (foodItem == null)
-                        break;
-
-                    customer.Serve(foodItem.recipe);
-                    Destroy(this.item.gameObject);
-                    this.item = null;
                     break;
             }
         }
     }
 
-  void Move()
+    void Move()
     {
         Vector2 dir = Vector2.zero;
-        dir.x = Input.GetAxis("Horizontal");
-        dir.y = Input.GetAxis("Vertical");
+
+        // MOVIMENTO WASD
+        if (Input.GetKey(KeyCode.A)) dir.x = -1;
+        if (Input.GetKey(KeyCode.D)) dir.x = 1;
+        if (Input.GetKey(KeyCode.W)) dir.y = 1;
+        if (Input.GetKey(KeyCode.S)) dir.y = -1;
+
         dir.Normalize();
 
+        
         if (Input.GetKeyDown(KeyCode.Q) && dir != Vector2.zero && inDash == false)
         {
             inDash = true;
@@ -95,20 +93,26 @@ public class PlayerController : MonoBehaviour
             Invoke("PostDash", 0.1f);
         }
 
+        // VIRAR PERSONAGEM
         if (dir.x > 0)
         {
-            this.transform.localScale = new Vector3(0.78f, 0.78f, 1f);
-        } else if (dir.x < 0)
+            this.transform.localScale =
+                new Vector3(0.78f, 0.78f, 1f);
+        }
+        else if (dir.x < 0)
         {
-            this.transform.localScale = new Vector3(-0.78f, 0.78f, 1f);
+            this.transform.localScale =
+                new Vector3(-0.78f, 0.78f, 1f);
         }
 
-        GetComponent<Rigidbody2D>().linearVelocity = dir * speedAtual;
+        // MOVIMENTO
+        GetComponent<Rigidbody2D>().linearVelocity = dir * speed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (this.collidingWithList.Contains(collision.gameObject)) return;
+
         this.collidingWithList.Add(collision.gameObject);
 
         CleanHighlight();
@@ -118,9 +122,11 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (!this.collidingWithList.Contains(collision.gameObject)) return;
+
         this.collidingWithList.Remove(collision.gameObject);
-        
+
         CleanHighlight();
+
         if (this.collidingWithList.Count > 0)
         {
             GetFirstCollider();
@@ -139,28 +145,26 @@ public class PlayerController : MonoBehaviour
         speedAtual = speed;
         Invoke("DashEnd", dashCooldown);
     }
+
     void GetFirstCollider()
-    { 
-    this.collidingWith = this.collidingWithList
-        .FirstOrDefault(obj => !obj.CompareTag("Wall"));
-
-    if (this.collidingWith != null)
     {
-        this.collidingWith.GetComponent<SpriteRenderer>().color = this.highlightColor;
-    }
+        this.collidingWith = this.collidingWithList
+            .FirstOrDefault(obj => !obj.CompareTag("Wall"));
 
-        //this.collidingWith = this.collidingWithList.First();
-        //this.collidingWith.GetComponent<SpriteRenderer>().color = this.highlightColor;
+        if (this.collidingWith != null)
+        {
+            this.collidingWith
+                .GetComponent<SpriteRenderer>().color = this.highlightColor;
+        }
     }
 
     void CleanHighlight()
     {
         if (this.collidingWith != null &&
-        !this.collidingWith.CompareTag("Wall"))
-    {
-        this.collidingWith.GetComponent<SpriteRenderer>().color = Color.white;
-    }
-
-        //if (this.collidingWith != null) this.collidingWith.GetComponent<SpriteRenderer>().color = Color.white;
+            !this.collidingWith.CompareTag("Wall"))
+        {
+            this.collidingWith
+                .GetComponent<SpriteRenderer>().color = Color.white;
+        }
     }
 }

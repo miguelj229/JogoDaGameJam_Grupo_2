@@ -6,6 +6,13 @@ public class ContainerController : MonoBehaviour
 {
     [Header("Config")]
     [SerializeField] Transform item;
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
 
     public bool HaveItem()
     {
@@ -14,8 +21,10 @@ public class ContainerController : MonoBehaviour
 
     public Transform GetItem()
     {
+ 
         Transform itemToReturn = this.item;
         this.item = null;
+        audioManager.PlaySFX(audioManager.steps);
 
         return itemToReturn;
     }
@@ -23,5 +32,6 @@ public class ContainerController : MonoBehaviour
     public void SetItem(Transform _item)
     {
         this.item = _item;
+        audioManager.PlaySFX(audioManager.steps);
     }
 }
