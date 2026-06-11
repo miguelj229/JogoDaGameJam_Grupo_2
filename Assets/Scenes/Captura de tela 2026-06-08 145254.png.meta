@@ -119,7 +119,7 @@ TextureImporter:
         x: 0
         y: 0
         width: 515
-        height: 477
+        height: 257
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Captura de tela 2026-06-08 145254_0: 5982175541494822506
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

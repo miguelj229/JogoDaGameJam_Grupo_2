@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 97f0351c991c033429157a10b47b9a37
+guid: 65ab94f9983b16d43bd2045998db92bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3157607403505075690
-    second: casaamenuvoltar_0
+      213: 4588497011755745830
+    second: negocio do menu_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: casaamenuvoltar_0
+      name: negocio do menu_0
       rect:
         serializedVersion: 2
-        x: 263
-        y: 143
-        width: 106
-        height: 106
+        x: 129
+        y: 129
+        width: 262
+        height: 262
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61abfe5dbcced24d0800000000000000
-      internalID: -3157607403505075690
+      spriteID: 62284a6a8bd9daf30800000000000000
+      internalID: 4588497011755745830
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ec9d7a369dd07d643b71a6d50dde1acd
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      casaamenuvoltar_0: -3157607403505075690
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
